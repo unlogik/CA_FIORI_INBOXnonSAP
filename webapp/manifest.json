@@ -1,0 +1,98 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0"
+		},
+		"title": "{{SHELL_TITLE}}",
+		"dataSources": {
+			"TASKPROCESSING": {
+				"uri": "/sap/opu/odata/iwpgw/TASKPROCESSING;v=0002;o=LOCAL_ZTASK_MW;mo/",
+				"settings": {
+					"localUri": "./localService/metadata.xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "fioriexttemplate.replaceservicecomponent",
+			"version": "1.4.0"
+		},
+		"i18n": "i18n/i18n.properties"
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://approvals",
+			"favIcon": "./resources/sap/ca/ui/themes/base/img/favicon/Approve_Requests.ico"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb,sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"dependencies": {
+			"minUI5Version": "1.38.9"
+		},
+		"extends": {
+			"component": "cross.fnd.fiori.inbox",
+			"extensions": {
+				"sap.ui.controllerExtensions": {
+					"cross.fnd.fiori.inbox.view.S3": {
+						"controllerName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S3Custom"
+					},
+					"cross.fnd.fiori.inbox.view.S2": {
+						"controllerName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S2Custom"
+					},
+					"cross.fnd.fiori.inbox.Main": {
+						"controllerName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.MainCustom"
+					}
+				},
+				"sap.ui.viewExtensions": {
+					"cross.fnd.fiori.inbox.view.S2": {
+						"CustomerExtensionForObjectListItem": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S2_CustomerExtensionForObjectListItemCustom",
+							"type": "XML"
+						}
+					},
+					"cross.fnd.fiori.inbox.view.S3": {
+						"CustomerExtensionForObjectHeader": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S3_CustomerExtensionForObjectHeaderCustom",
+							"type": "XML"
+						}
+					}					
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"config": {
+			"sap.ca.serviceConfigs": [
+				{
+					"name": "TASKPROCESSING",
+					"isDefault": true
+				}
+			],
+			"sap.ca.i18Nconfigs": {
+				"bundleName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.i18n.i18n"
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zca_inboxnonsap/webapp",
+		"_version": "1.1.0"
+	}
+}

@@ -1,0 +1,31 @@
+[{
+	"__metadata": {
+		"id": "TaskDefinitionCollection(SAP__Origin='QE4910_TGW',TaskDefinitionID='TS91000001_WS91000001_0000000004')",
+		"uri": "TaskDefinitionCollection(SAP__Origin='QE4910_TGW',TaskDefinitionID='TS91000001_WS91000001_0000000004')",
+		"type": "TASKPROCESSING.TaskDefinition"
+	},
+	"SAP__Origin": "QE4910_TGW",
+	"TaskDefinitionID": "TS91000001_WS91000001_0000000004",
+	"TaskName": "Approve Employee Record",
+	"Category": "Task",
+	"CustomAttributeDefinitionData": {
+		"__deferred": {
+			"uri": "TaskDefinitionCollection(SAP__Origin='QE4910_TGW',TaskDefinitionID='TS91000001_WS91000001_0000000004')/CustomAttributeDefinitionData"
+		}
+	}
+}, {
+	"__metadata": {
+		"id": "TaskDefinitionCollection(SAP__Origin='BPM_KARYA_VM',TaskDefinitionID='e03d999b7bc8f6413e5211e4bdf4005056bb7566')",
+		"uri": "TaskDefinitionCollection(SAP__Origin='BPM_KARYA_VM',TaskDefinitionID='e03d999b7bc8f6413e5211e4bdf4005056bb7566')",
+		"type": "TASKPROCESSING.TaskDefinition"
+	},
+	"SAP__Origin": "BPM_KARYA_VM",
+	"TaskDefinitionID": "e03d999b7bc8f6413e5211e4bdf4005056bb7566",
+	"TaskName": "Invoice",
+	"Category": "TASK",
+	"CustomAttributeDefinitionData": {
+		"__deferred": {
+			"uri": "TaskDefinitionCollection(SAP__Origin='BPM_KARYA_VM',TaskDefinitionID='e03d999b7bc8f6413e5211e4bdf4005056bb7566')/CustomAttributeDefinitionData"
+		}
+	}
+}]
