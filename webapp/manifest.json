@@ -70,8 +70,13 @@
 							"className": "sap.ui.core.Fragment",
 							"fragmentName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S3_CustomerExtensionForObjectHeaderCustom",
 							"type": "XML"
-						}
-					}					
+						},
+						"#CustomerExtensionForNoteTabContent": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "cross.fnd.fiori.inbox.CA_FIORI_INBOXnonSAP.view.S3_CustomerExtensionForNoteTabContentCustom",
+							"type": "XML"
+						}						
+					}				
 				}
 			}
 		},

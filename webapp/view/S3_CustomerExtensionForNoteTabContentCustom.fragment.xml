@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!-- The following controls were copied from the parent view -->
+	<core:ComponentContainer id="commentsContainer" propagateModel="true"/>
+</core:FragmentDefinition>

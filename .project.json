@@ -48,7 +48,7 @@
     "resourceModelName": "i18n"
   },
   "mockpreview": {
-    "mockUri": "/sap/opu/odata/iwpgw/TASKPROCESSING;v=0002;o=LOCAL_ZTASK_MW/",
+    "mockUri": "/sap/opu/odata/iwpgw/TASKPROCESSING;v=0002;o=LOCAL_ZTASK_MW;mo/",
     "metadataFilePath": "./localService/metadata.xml",
     "loadJSONFiles": false,
     "loadCustomRequests": false,
